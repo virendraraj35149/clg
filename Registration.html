@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to right bottom, #4e54c8, #8f94fb);
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .registration-form {
+      width: 400px;
+      padding: 40px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    }
+    .registration-form h2 {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-control {
+      border-radius: 20px;
+    }
+    .register-btn {
+      background-color: #4e54c8;
+      color: #fff;
+      border: none;
+      border-radius: 20px;
+      transition: background-color 0.3s;
+    }
+    .register-btn:hover {
+      background-color: #8f94fb;
+    }
+    .footer-text {
+      margin-top: 20px;
+      text-align: center;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="registration-form">
+    <h2>Registration</h2>
+    <form id="registrationForm">
+      <div class="form-group">
+        <input type="text" class="form-control" id="fullname" placeholder="Full Name">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="mobile" placeholder="Mobile Number">
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-control" id="email" placeholder="Email Address">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="address" placeholder="Full Address">
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" id="password" placeholder="Password">
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password">
+      </div>
+      <button type="submit" class="btn btn-primary btn-block register-btn">Register</button>
+    </form>
+    <p class="footer-text">Already have an account? <a href="Login.html">Login</a></p>
+  </div>
+
+  <script>
+    document.getElementById("registrationForm").addEventListener("submit", function(event) {
+      var fullname = document.getElementById("fullname").value;
+      var mobile = document.getElementById("mobile").value;
+      var email = document.getElementById("email").value;
+      var address = document.getElementById("address").value;
+      var password = document.getElementById("password").value;
+      var confirmPassword = document.getElementById("confirmPassword").value;
+
+      if (!fullname.trim() || !mobile.trim() || !email.trim() || !address.trim() || !password.trim() || !confirmPassword.trim()) {
+        event.preventDefault();
+        alert("All fields are required.");
+      } else if (password !== confirmPassword) {
+        event.preventDefault();
+        alert("Passwords do not match.");
+      }
+    });
+  </script>
+
+</body>
+</html>
+

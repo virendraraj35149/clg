@@ -1,0 +1,195 @@
+*{
+margin:0px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand img {
+            height: auto;
+        }
+        .navbar {
+            z-index: 1000; /* Ensure navbar appears on top */
+        }
+        
+.logo-image{
+	width:200px;
+}
+ul li{
+	font-size:25px;
+	padding:5px;
+}
+
+.bd-example {
+     --bd-example-padding: 0rem; 
+     position: relative; 
+     padding: var(--bd-example-padding); 
+     margin: 0 -1.5rem; 
+     border: solid #dee2e6;
+     border-width: 1px 0; 
+     }
+.p-3 {
+    padding: 0rem!important;
+}
+#banner {
+    width: 100%;
+    height: 750px;
+    background-image: url('https://source.unsplash.com/featured/?fashion,clothing');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+#banner-text {
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.para-one {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.para-two {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.para-three {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.shop-now-button {
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.shop-now-button:hover {
+    background-color: #e03d00;
+}
+
+/* Custom styles */
+    .product {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .product img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+    .product-info {
+      padding: 20px;
+    }
+    .product-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .product-description {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 15px;
+    }
+    .product-price {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #333;
+    }
+    .shop-now-btn {
+      display: block;
+      width: 100%;
+      text-align: center;
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 0;
+      border: none;
+      border-radius: 0;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+    .shop-now-btn:hover {
+      background-color: #0056b3;
+    }
+    .section-title {
+      padding-top:30px;
+      text-align: center;
+    }
+    .hr-line {
+      width: 50px;
+      height: 2px;
+      background-color: #333;
+      margin: 20px auto;
+    }
+    
+    .brand-name{
+    	margin-top:20px;
+    	margin-bottom:20px;
+    }
+    
+    #categories {
+      padding: 50px 0;
+      background-color: #f8f9fa;
+    }
+    .category {
+      text-align: center;
+    }
+    .category i {
+      font-size: 48px;
+      color: #007bff;
+    }
+    .category h4 {
+      margin-top: 20px;
+      font-size: 20px;
+    }
+    
+    footer {
+            background-color: #0D6EFD;
+            color: #fff;
+            padding: 20px 0;
+        }
+        .footer-section {
+            margin-bottom: 20px;
+        }
+        .footer-logo img {
+            height: auto;
+        }
+        .quick-links a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        .social-media a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 10px;
+            font-size: 50px;
+            padding:20px;
+        }
+        .address p {
+            color: #fff;
+            font-size: 20px;
+        }
